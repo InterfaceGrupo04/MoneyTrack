@@ -1,0 +1,16 @@
+{
+  "name": "moneytrack",
+  "version": "1.0.0",
+  "description": "O MoneyTrack é um aplicativo que visa proporcionar aos usuários uma forma fácil e organizada de gerenciar as suas finanças. \r Ele permitirá que os usuários registrem as suas despesas diárias, categorizem os seus gastos, estabeleçam orçamentos mensais e definam metas de economia. \r Além disso, o aplicativo oferecerá lembretes para pagamentos de contas e fornecerá gráficos visuais para análise de despesas, permitindo que os usuários vejam rapidamente onde estão gastando mais.\r # Main Goals\r - Controle de Gastos: Ajuda o usuário a registrar e categorizar despesas, com relatórios de fácil\r leitura.\r - Estabelecimento de Orçamentos: Permite criar limites de gastos para diferentes categorias (como\r alimentação, transporte, lazer).\r - Metas de Economia: Auxilia na definição e no acompanhamento de metas financeiras.\r - Lembretes de Pagamento: Envia notificações para lembrar o usuário das suas contas a pagar.\r - Análise de Despesas: Fornece gráficos e relatórios de gastos, com insights sobre o\r comportamento financeiro do usuário.\r # Team\r - Rafael Oliveira-a042611\r - Beatriz Lima-a044416  \r - Igor Cruz -a043765",
+  "main": "index.js",
+  "scripts": {
+    "sass:build": "sass --no-source-map part3/scss:part3/css",
+    "sass:watch": "sass --no-source-map --watch part3/scss:part3/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.81.0"
+  }
+}
