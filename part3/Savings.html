@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="header bg-purple text-white p-3 d-flex justify-content-between align-items-center">
+      <div class="menu d-flex align-items-center">
+        <i class="fas fa-arrow-left"></i>
+        <a href="Menu.html" class="ms-2">Menu</a>
+        <a href="Savings.html" class="ms-3">Savings</a>
+      </div>
+      <div class="icons d-flex align-items-center">
+        <i class="fas fa-bell ms-3"></i>
+        <i class="fas fa-user-friends ms-3"></i>
+      </div>
+    </div>
+    <div class="content container mt-4">
+      <h1 class="h3">Savings</h1>
+      <div class="mt-1" style="width: 80px; height: 3px; background-color: #6a11cb;"></div>
+
+      <div class="set-savings my-4 text-center ">
+          <label for="savings" class="mb-3">Set savings</label>
+          <input id="savings" type="text" class="form-control  text-center" value="€ 0.000,00">
+      </div>
+
+      <div class="goals d-flex align-items-center justify-content-center">
+          <i class="fas fa-chevron-left me-3"></i>
+          <div class="goal-card text-center">
+            <div class="card shadow p-4 text-white bg-primary">
+              <h2>Travel</h2>
+              <p>$ 1200,00</p>
+              <p>30/06/2025</p>
+              <p>Summer trip to the Maldives</p>
+            </div>
+          </div>
+          <div class="goal-card text-center position-relative mx-3">
+            <div class="card shadow p-4 text-white bg-primary">
+              <i class="fas fa-pen edit-icon position-absolute" style="top: 10ps; right: 10px; cursor: pointer;"></i>
+              <h2>Travel</h2>
+              <p>$ 1200,00</p>
+              <p>30/06/2025</p>
+              <p>Summer trip to the Maldives</p>
+            </div>
+          </div>
+          <div class="goal-card text-center">
+            <div class="card shadow p-4 text-white bg-primary">
+              <h2>Travel</h2>
+              <p>$ 1200,00</p>
+              <p>30/06/2025</p>
+              <p>Summer trip to the Maldives</p>
+            </div>
+          </div>
+          <i class="fas fa-chevron-right ms-3"></i>
+      </div>
+      <div class="buttons button mt-4">
+          <button>Add Goal</button>
+      </div>
+  </div>
+  </body>
+</html>

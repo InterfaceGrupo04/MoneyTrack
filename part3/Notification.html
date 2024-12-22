@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="header bg-purple text-white p-3 d-flex justify-content-between align-items-center">
+    <div class="menu d-flex align-items-center">
+      <i class="fas fa-arrow-left"></i>
+      <a href="Menu.html" class="ms-2">Menu</a>
+      <a href="Notification.html" class="ms-3">Notification</a>
+    </div>
+    <div class="icons d-flex align-items-center">
+      <i class="fas fa-bell ms-3"></i>
+      <i class="fas fa-user-friends ms-3"></i>
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <div class="card shadow p-4">
+        <div class="d-flex align-items-center mb-4">
+            <h2 class="h3">Notification</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="notification-item d-flex justify-content-between align-items-center p-2 mb-2 bg-light rounded">
+                    <div>
+                        <i class="fas fa-check-circle"></i>
+                        <strong>Info1</strong>
+                        <div class="description text-muted">description</div>
+                    </div>
+                    <div>2m</div>
+                </div>
+                <div class="notification-item d-flex justify-content-between align-items-center p-2 mb-2 bg-light rounded">
+                    <div>
+                        <i class="fas fa-check-circle"></i>
+                        <strong>Info2</strong>
+                        <div class="description text-muted">description</div>
+                    </div>
+                    <div>3m</div>
+                </div> <div class="notification-item d-flex justify-content-between align-items-center p-2 mb-2 bg-light rounded">
+                    <div>
+                        <i class="fas fa-check-circle"></i>
+                        <strong>Info3</strong>
+                        <div class="description text-muted">description</div>
+                    </div>
+                    <div>2d</div>
+                </div> <div class="notification-item d-flex justify-content-between align-items-center p-2 mb-2 bg-light rounded">
+                    <div>
+                        <i class="fas fa-check-circle"></i>
+                        <strong>Info4</strong>
+                        <div class="description text-muted">description</div>
+                    </div>
+                    <div>2M</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="section bg-white rounded shadow p-4">
+                    <h2 class="h4">Calendar</h2>
+                    <div class="calendar">
+                        <div class="p-3 text-white bg-primary rounded mb-3">February 2021</div>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Mo</th>
+                                    <th>Tu</th>
+                                    <th>We</th>
+                                    <th>Th</th>
+                                    <th>Fr</th>
+                                    <th>Sa</th>
+                                    <th>Su</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18</td>
+                                    <td>19</td>
+                                </tr>
+                                <tr>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25</td>
+                                    <td>26</td>
+                                </tr>
+                                <tr>
+                                    <td>27</td>
+                                    <td>28</td>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td>31</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+        
+                            </tbody>
+                        </table>
+                        <div class="reminder-box">
+                            <h5>Lembretes</h5>
+                            <ul id="reminders" class="card shadow p-4">
+                                <strong>Pagamento do carro 100 euros</strong>
+                                <strong>Pagamento da casa 400 euros</strong>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

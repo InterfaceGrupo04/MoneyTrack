@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="header bg-purple text-white p-3 d-flex justify-content-between align-items-center">
+    <div class="menu d-flex align-items-center">
+      <i class="fas fa-arrow-left"></i>
+      <span class="ms-2">Menu</span>
+      <span class="ms-3">Budget</span>
+    </div>
+    <div class="icons d-flex align-items-center">
+      <i class="fas fa-bell ms-3"></i>
+      <i class="fas fa-user-friends ms-3"></i>
+    </div>
+  </div>
+  <div class="container py-5">
+    <div class="header d-flex justify-content-between mb-4">
+      <div>
+        <h1>Budget</h1>
+        <div class="underline" style="width: 50px; height: 3px; background-color: #6a0dad; margin-top: 5px;"></div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="month">Month</label>
+      <input id="month" placeholder="Month" type="text" class="form-control"/>
+    </div>
+    <div class="form-group">
+      <label for="total">Total</label>
+      <input id="total" placeholder="Total Value" type="text" class="form-control"/>
+    </div>
+    <div class="categories mb-4">
+      <label class="d-flex align-items-center mb-2">
+        <input type="checkbox" style="border: 2px solid #00ff00;" class="mr-2">
+        Categorie CX
+      </label>
+      <label class="d-flex align-items-center mb-2">
+        <input type="checkbox" style="border: 2px solid #0000ff;" class="mr-2">
+        Categorie CY
+      </label>
+      <label class="d-flex align-items-center mb-2">
+        <input type="checkbox" style="border: 2px solid #ff00ff;" class="mr-2">
+        Categorie CZ
+      </label>
+      <label class="d-flex align-items-center mb-2">
+        <input type="checkbox" style="border: 2px solid #ffff00;" class="mr-2">
+        Categorie CW
+      </label>
+    </div>
+    <div class="chart text-center mb-4">
+      <img alt="Pie chart with four colored sections: green, blue, purple, and yellow" height="150" src="https://storage.googleapis.com/a1aa/image/AKU41BeOPtRTJyyeZobdZraxeDT8kwVP4F6fJnFzjeja68jfE.jpg" width="150"/>
+    </div>
+    <div class="add-category text-right">
+      <button class="btn btn-purple text-white px-4 py-2">Add Category</button>
+    </div>
+  </div>
+</body>
+</html>

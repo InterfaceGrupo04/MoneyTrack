@@ -1,1 +1,272 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+.header {
+  background-color: purple;
+  background-image: linear-gradient(to right, #4a00e0,#8e2de8);
+  color: white;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1{
+  margin: 0;
+  font-size: 1.8em;
+}
+.menu{
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.menu i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.header .icons {
+  display: flex;
+  align-items: center;
+}
+
+.header .icons i {
+  margin-left: 20px;
+  font-size: 1.5rem;
+}
+
+.navigation{
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.navigation ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navigation ul li{
+  margin: 10px 0;
+}
+.navigation ul li a{
+  text-decoration: none;
+  color: #6f42c1;
+  font-size: 1.1rem;
+
+}
+.navigation ul li a:hover{
+  color: #5a3799;
+}
+
+.purple-bar {
+  height: 16px;
+  background-color: #6f42c1;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+
+.btn-custom {
+  background-color: #6f42c1;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: #5a3799;
+  color: #563395;
+}
+
+
+.text-primary {
+  color: #8e2de8;
+}
+.text-purple{
+  color: #8e2de8;
+}
+.bg-primary{
+  background-image: linear-gradient(to right, #4a00e0,#8e2de8);
+}
+.name{
+  background-color: rgba(228, 228, 228, 0.99);
+}
+.content{
+  padding: 20px;
+  background-color: #f4f4f4;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-page .form-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-page h1 {
+  color: #562f9e;
+  font-size: 2.5rem;
+}
+
+.login-page form input {
+  margin-bottom: 15px;
+}
+
+.login-page form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #6f42c1;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+.register-page .form-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.register-page h1 {
+  color: #6f42c1;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.register-page .form-container input {
+  margin-bottom: 15px;
+}
+
+.register-page .btn-custom {
+  font-weight: bold;
+}
+
+.register-page img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.form-group label {
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+
+.categories{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap:20px;
+}
+.category-card{
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  width: calc(33% - 20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.buttons button{
+  background-color: purple;
+  background-image: linear-gradient(to right, #4a00e0,#8e2de8);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.nav-buttons{
+  display: flex;
+  gap: 20px;
+}
+.year-selector {
+  margin: 20px 0;
+}
+.year-selector select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.year-selector select:focus {
+  outline: none;
+  border-color: #6a0dad;
+}
+.bar-chart {
+  display: flex;
+  flex-direction: column;
+}
+.bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.bar span {
+  width: 30px;
+  text-align: right;
+  margin-right: 10px;
+}
+.bar .bar-inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.bar .bar-inner div {
+  height: 20px;
+  margin-right: 10px;
+}
+.bar .bar-inner .bar-blue {
+  background-color: #00008b;
+}
+.bar .bar-inner .bar-purple {
+  background-color: #6a0dad;
+}
+.bar .bar-inner span {
+  font-size: 14px;
+}
+@media (max-width: 768px){
+  .container{
+    flex-direction: column;
+  }
+  .sidebar, .content{
+    width: 100%;
+    margin: 0;
+  }
+}
