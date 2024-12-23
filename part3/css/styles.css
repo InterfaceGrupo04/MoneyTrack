@@ -80,18 +80,18 @@ body {
 
 
 .btn-custom {
-  background-color: #6f42c1;
+  background-color: purple;
+  background-image: linear-gradient(to right, #4a00e0,#8e2de8);
   color: #fff;
   border: none;
   padding: 10px;
   font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  border-radius: 10%;
+  margin-right: 25px;
 }
 
 .btn-custom:hover {
-  background-color: #5a3799;
-  color: #563395;
+  background-color: #7a00cc;
 }
 
 
