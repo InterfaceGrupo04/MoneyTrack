@@ -10,33 +10,69 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
-  <div class="header bg-purple text-white p-3 d-flex justify-content-between align-items-center">
-    <div class="menu d-flex align-items-center">
-      <a href="Menu.html"class="fas fa-arrow-left"></a>
-      <a href="Menu.html" class="ms-2">Menu</a>
-      <a href="Budget.html" class="ms-3">Budget</a>
-      <a href="Categoria.html" class="ms-3">Categoria CY</a>
-    </div>
-    <div class="icons d-flex align-items-center">
-      <a href="Notification.html" class="fas fa-bell fa-2x ms-2"></a>
-      <a href="Profile.html" class="fas fa-user-friends fa-2x ms-3"></a>
-    </div>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+
+  <div class="bg-purple-600 text-white py-4 px-6 flex justify-between items-center">
+      <div class="flex items-center gap-4">
+          <a href="Menu.html" class="fas fa-arrow-left text-lg"></a>
+          <a href="Menu.html" class="text-lg hover:underline">Menu</a>
+          <a href="Budget.html" class="text-lg hover:underline">Budget</a>
+          <a href="Categoria.html" class="text-lg font-semibold underline">Categoria CY</a>
+      </div>
+      <div class="flex items-center gap-4">
+          <a href="Notification.html" class="fas fa-bell text-2xl hover:text-gray-300"></a>
+          <a href="Profile.html" class="fas fa-user-friends text-2xl hover:text-gray-300"></a>
+      </div>
   </div>
-  <div class="container">
-      <div class="content">
-          <h2>Categorie CY</h2>
-          <p>Total <strong>$1500,00</strong></p>
-          <p>Limit <strong>$2000,00</strong></p>
-          <p>Daily Expenses</p>
-          <p>April 2023</p>
-          <div class="chart">
-              <img src="https://placehold.co/600x300" alt="Bar chart showing daily expenses for April 2023"/>
-          </div>
-          <div class="buttons">
-              <a href="Budget.html" class="btn-custom">Save reminder</a>
-              <a href="Notification.html" class="btn-custom">Add to calendar</a>
-          </div>
+
+  <div class="container mx-auto p-6">
+      <div class="bg-white shadow-md rounded-lg p-6 text-center mb-6">
+          <h2 class="text-2xl font-bold text-gray-800 mb-2">Categoria CY</h2>
+          <p class="text-gray-700">
+              Total: <strong class="text-gray-900">$1500.00</strong>
+          </p>
+          <p class="text-gray-700">
+              Limit: <strong class="text-gray-900">$2000.00</strong>
+          </p>
+      </div>
+
+      <div class="bg-white shadow-md rounded-lg p-6 overflow-x-auto">
+          <h3 class="text-lg font-semibold text-gray-800 mb-4">Daily Expenses - April 2023</h3>
+          <table class="table-auto w-full border-collapse border border-gray-200">
+              <thead class="bg-gray-200 text-gray-700">
+                  <tr>
+                      <th class="px-4 py-2 border border-gray-300">Date</th>
+                      <th class="px-4 py-2 border border-gray-300">Category</th>
+                      <th class="px-4 py-2 border border-gray-300">Amount</th>
+                      <th class="px-4 py-2 border border-gray-300">Notes</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr class="bg-gray-50 hover:bg-gray-100">
+                      <td class="px-4 py-2 border border-gray-300 text-center">April 1</td>
+                      <td class="px-4 py-2 border border-gray-300 text-center">Food</td>
+                      <td class="px-4 py-2 border border-gray-300 text-center">$25.00</td>
+                      <td class="px-4 py-2 border border-gray-300 text-center">Lunch with friends</td>
+                  </tr>
+                  <tr class="bg-white hover:bg-gray-100">
+                      <td class="px-4 py-2 border border-gray-300 text-center">April 2</td>
+                      <td class="px-4 py-2 border border-gray-300 text-center">Transportation</td>
+                      <td class="px-4 py-2 border border-gray-300 text-center">$15.00</td>
+                      <td class="px-4 py-2 border border-gray-300 text-center">Gas refill</td>
+                  </tr>
+                  <tr class="bg-gray-50 hover:bg-gray-100">
+                      <td class="px-4 py-2 border border-gray-300 text-center">April 3</td>
+                      <td class="px-4 py-2 border border-gray-300 text-center">Groceries</td>
+                      <td class="px-4 py-2 border border-gray-300 text-center">$45.00</td>
+                      <td class="px-4 py-2 border border-gray-300 text-center">Weekly supplies</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+
+      <div class="flex justify-center gap-6 mt-6">
+          <a href="Budget.html" class="btn-custom">Save Reminder</a>
+          <a href="Notification.html" class="btn-custom">Add to Calendar</a>
       </div>
   </div>
 </body>

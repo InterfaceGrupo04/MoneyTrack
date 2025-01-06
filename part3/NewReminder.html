@@ -10,83 +10,102 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
-  <div class="header bg-purple text-white p-3 d-flex justify-content-between align-items-center">
-    <div class="menu d-flex align-items-center">
-      <i class="fas fa-arrow-left"></i>
-      <a href="Menu.html" class="ms-2">Menu</a>
-      <a href="Reminders.html" class="ms-3">Reminders</a>
-      <a href="NewReminder.html" class="ms-3">New Reminder</a>
+<body class="bg-gray-100 font-sans">
+  <header class="bg-purple-600 text-white py-4 px-6 flex justify-between items-center shadow-md">
+    <nav class="flex items-center space-x-4">
+      <a href="Reminders.html" class="fas fa-arrow-left text-xl"></a>
+      <a href="Menu.html" class="text-lg font-medium">Menu</a>
+      <a href="Reminders.html" class="text-lg font-medium">Reminders</a>
+      <a href="NewReminder.html" class="text-lg font-medium">New Reminder</a>
+    </nav>
+    <div class="flex items-center space-x-6">
+      <a href="Notification.html" class="fas fa-bell text-2xl hover:text-gray-300"></a>
+      <a href="Profile.html" class="fas fa-user-friends text-2xl hover:text-gray-300"></a>
     </div>
-    <div class="icons d-flex align-items-center">
-      <a href="Notification.html" class="fas fa-bell fa-2x ms-2"></a>
-      <a href="Profile.html" class="fas fa-user-friends fa-2x ms-3"></a>
-    </div>
-  </div>
-  </div>
+  </header>
 
-  <div class="container mt-4">
-    <div class="card shadow p-4">
-      <div class="d-flex align-items-center mb-4">
-          <i class=" fas fa-circle text-purple me-2"></i>
-          <h2 class="h5 mb-0">Add New Reminder</h2>
+  <main class="container mx-auto mt-6 p-6 bg-white shadow-lg rounded-lg">
+    <div class="flex items-center mb-6">
+      <i class="fas fa-circle text-purple-500 mr-3"></i>
+      <h1 class="text-2xl font-semibold text-gray-800">Add New Reminder</h1>
+    </div>
+
+    <form class="space-y-6">
+      <div>
+        <input 
+          type="text" 
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-purple-500" 
+          placeholder="Title"
+        />
       </div>
 
-      <!-- Form -->
-      <form>
-          <div class="mb-3">
-              <input type="text" class="form-control" placeholder="Title">
-          </div>
-
-          <div class="mb-10">
-            <label class="form-label">
-                Date
-            </label>
-            <div class="d-flex justify-content-between">
-              <span class="text-muted" >Null</span>
-              <i class="fas fa-arrow-right ms-2"></i>
-            </div>
+      <div>
+        <label class="block text-gray-700 font-medium mb-1">Date</label>
+        <div class="flex justify-between items-center p-3 border border-gray-300 rounded-lg">
+          <span class="text-gray-500">Null</span>
+          <i class="fas fa-arrow-right text-gray-400"></i>
         </div>
-          <div class="mb-10">
-            <label class="form-label">
-                Repeat
-            </label>
-            <div class="d-flex justify-content-between">
-              <span class="text-muted" >Dont Repeat</span>
-              <i class="fas fa-arrow-right ms-2"></i>
-            </div>
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-medium mb-1">Repeat</label>
+        <div class="flex justify-between items-center p-3 border border-gray-300 rounded-lg">
+          <span class="text-gray-500">Don't Repeat</span>
+          <i class="fas fa-arrow-right text-gray-400"></i>
         </div>
+      </div>
 
-          <div class="mb-10">
-              <label class="form-label">
-                  List
-              </label>
-              <div class="d-flex justify-content-between">
-                <span class="text-muted" >Personal</span>
-                <i class="fas fa-arrow-right ms-2"></i>
-              </div>
-          </div>
+      <div>
+        <label class="block text-gray-700 font-medium mb-1">List</label>
+        <div class="flex justify-between items-center p-3 border border-gray-300 rounded-lg">
+          <span class="text-gray-500">Personal</span>
+          <i class="fas fa-arrow-right text-gray-400"></i>
+        </div>
+      </div>
 
-          <div class="mb-3">
-              <textarea class="form-control" placeholder="Notes"></textarea>
-          </div>
+      <div>
+        <textarea 
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-purple-500" 
+          rows="4" 
+          placeholder="Notes"
+        ></textarea>
+      </div>
 
-          <div class="form-check mb-3">
-              <input class="form-check-input" type="checkbox" id="email">
-              <label class="form-check-label" for="email">Send to email</label>
-          </div>
+      <div>
+        <label class="flex items-center">
+          <input 
+            type="checkbox" 
+            class="w-4 h-4 text-purple-500 border-gray-300 rounded focus:ring-purple-500"
+          />
+          <span class="ml-2 text-gray-700">Send to email</span>
+        </label>
+      </div>
 
-          <div class="form-check mb-4">
-              <input class="form-check-input" type="checkbox" id="message">
-              <label class="form-check-label" for="message">Send a message</label>
-          </div>
+      <div>
+        <label class="flex items-center">
+          <input 
+            type="checkbox" 
+            class="w-4 h-4 text-purple-500 border-gray-300 rounded focus:ring-purple-500"
+          />
+          <span class="ml-2 text-gray-700">Send a message</span>
+        </label>
+      </div>
 
-          <div class="d-flex justify-content-between mt-4 buttons">
-              <a href="Reminders.html" class="btn-custom">Save Reminder</a>
-              <a href="Notification.html" class="btn-custom">Add to Calendar</a>
-          </div>
-      </form>
-    </div>
-  </div>
+      <div class="flex justify-between items-center">
+        <a 
+          href="Reminders.html" 
+          class="px-6 py-3 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700"
+        >
+          Save Reminder
+        </a>
+        <a 
+          href="Notification.html" 
+          class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700"
+        >
+          Add to Calendar
+        </a>
+      </div>
+    </form>
+  </main>
 </body>
 </html>

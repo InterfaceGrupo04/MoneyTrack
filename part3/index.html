@@ -10,34 +10,49 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body class="login-page">
-    <div class="bg-roxo py-3"></div>
-    <div class="container d-flex justify-content-center align-items-center min-vh-100">
-        <div class="card shadow-lg p-4 w-100" style="max-width: 400px;">
-            <h1 class="text-center fw-bold mb-3">Welcome back!</h1>
-            <p class="text-center text-muted mb-4">Enter your credentials to access your account</p>
-            <form>
-                <div class="mb-3">
-                    <input type="email" name="email" placeholder="Username or Email" class="form-control">
-                </div>
-                <div class="mb-3">
-                    <input type="password" name="password" placeholder="Password" class="form-control">
-                </div>
-                <div class="mb-3 text-end">
-                    <a href="#" class="text-decoration-none text-primary">Forgot the password?</a>
-                </div>
-                <div class="form-check mb-3">
-                    <input type="checkbox" class="form-check-input" id="stayLoggedIn">
-                    <label class="form-check-label text-muted" for="stayLoggedIn">Stay logged in</label>
-                </div>
-                <div class="d-flex mb-3">
-                    <a href="Menu.html" class="btn btn-custom w-50 me-2">Enter</a>
-                    <a href="Register.html" class="btn btn-custom w-50 ms-2">Create account</a>
-                </div>
-            </form>
-            <div class="text-center">
-                <img src="https://placehold.co/250x150" alt="Digital security illustration" class="img-fluid">
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-sm">
+        <h1 class="text-2xl font-bold text-center text-gray-800 mb-4">Welcome back!</h1>
+        <p class="text-center text-gray-600 mb-6">Enter your credentials to access your account</p>
+
+        <form>
+            <div class="mb-4">
+                <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="Username or Email" 
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    required>
             </div>
+            <div class="mb-4">
+                <input 
+                    type="password" 
+                    name="password" 
+                    placeholder="Password" 
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    required>
+            </div>
+            <div class="mb-4 text-right">
+                <a href="#" class="text-sm text-purple-600 hover:underline">Forgot the password?</a>
+            </div>
+            <div class="flex items-center mb-6">
+                <input 
+                    type="checkbox" 
+                    id="stayLoggedIn" 
+                    class="mr-2 rounded focus:ring-purple-500">
+                <label for="stayLoggedIn" class="text-sm text-gray-600">Stay logged in</label>
+            </div>
+            <div class="flex gap-4">
+                <a href="Menu.html" class="bg-purple-600 btn-custom w-full py-2 text-center">Enter</a>
+                <a href="Register.html" class="bg-purple-600 btn-custom w-full py-2 text-center">Create account</a>
+            </div>
+        </form>
+
+        <div class="text-center mt-6">
+            <img 
+                src="https://placehold.co/250x150" 
+                alt="Digital security illustration" 
+                class="w-full max-w-xs mx-auto rounded-lg shadow">
         </div>
     </div>
 </body>

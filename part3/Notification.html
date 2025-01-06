@@ -10,136 +10,145 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
-  <div class="header bg-purple text-white p-3 d-flex justify-content-between align-items-center">
-    <div class="menu d-flex align-items-center">
-      <i class="fas fa-arrow-left"></i>
-      <a href="Menu.html" class="ms-2">Menu</a>
-      <a href="Notification.html" class="ms-3">Notification</a>
+<body class="bg-gray-100 font-sans">
+    <div class="bg-purple-600 text-white p-4 flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <a href="Menu.html" class="fas fa-arrow-left"></a>
+        <a href="Menu.html" class="hover:underline">Menu</a>
+        <a href="Notification.html" class="hover:underline">Notification</a>
+      </div>
+      <nav class="flex items-center gap-4">
+        <a href="Notification.html" class="fas fa-bell text-2xl hover:text-gray-300"></a>
+        <a href="Profile.html" class="fas fa-user-friends text-2xl hover:text-gray-300"></a>
+      </nav>
     </div>
-    <div class="icons d-flex align-items-center">
-        <a href="Notification.html" class="fas fa-bell fa-2x ms-2"></a>
-        <a href="Profile.html" class="fas fa-user-friends fa-2x ms-3"></a>
-    </div>
-  </div>
 
-  <div class="container mt-4">
-    <div class="card shadow p-4">
-        <div class="d-flex align-items-center mb-4">
-            <h2 class="h3">Notification</h2>
+    <div class="max-w-6xl mx-auto mt-8">
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="flex items-center mb-6">
+          <h2 class="text-lg font-semibold">Notification</h2>
         </div>
 
-        <div class="row">
-            <div class="col-md-6 mb-3">
-                <div class="notification-item d-flex justify-content-between align-items-center p-2 mb-2 bg-light rounded">
-                    <div>
-                        <i class="fas fa-check-circle"></i>
-                        <strong>Info1</strong>
-                        <div class="description text-muted">description</div>
-                    </div>
-                    <div>2m</div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <div class="space-y-4">
+              <div class="flex justify-between items-center p-4 bg-gray-100 rounded-lg">
+                <div>
+                  <i class="fas fa-check-circle text-green-500"></i>
+                  <strong class="ml-2">Info1</strong>
+                  <div class="text-gray-500 text-sm">description</div>
                 </div>
-                <div class="notification-item d-flex justify-content-between align-items-center p-2 mb-2 bg-light rounded">
-                    <div>
-                        <i class="fas fa-check-circle"></i>
-                        <strong>Info2</strong>
-                        <div class="description text-muted">description</div>
-                    </div>
-                    <div>3m</div>
-                </div> <div class="notification-item d-flex justify-content-between align-items-center p-2 mb-2 bg-light rounded">
-                    <div>
-                        <i class="fas fa-check-circle"></i>
-                        <strong>Info3</strong>
-                        <div class="description text-muted">description</div>
-                    </div>
-                    <div>2d</div>
-                </div> <div class="notification-item d-flex justify-content-between align-items-center p-2 mb-2 bg-light rounded">
-                    <div>
-                        <i class="fas fa-check-circle"></i>
-                        <strong>Info4</strong>
-                        <div class="description text-muted">description</div>
-                    </div>
-                    <div>2M</div>
+                <span class="text-gray-400 text-sm">2m</span>
+              </div>
+
+              <div class="flex justify-between items-center p-4 bg-gray-100 rounded-lg">
+                <div>
+                  <i class="fas fa-check-circle text-green-500"></i>
+                  <strong class="ml-2">Info2</strong>
+                  <div class="text-gray-500 text-sm">description</div>
                 </div>
+                <span class="text-gray-400 text-sm">3m</span>
+              </div>
+
+              <div class="flex justify-between items-center p-4 bg-gray-100 rounded-lg">
+                <div>
+                  <i class="fas fa-check-circle text-green-500"></i>
+                  <strong class="ml-2">Info3</strong>
+                  <div class="text-gray-500 text-sm">description</div>
+                </div>
+                <span class="text-gray-400 text-sm">2d</span>
+              </div>
+
+              <div class="flex justify-between items-center p-4 bg-gray-100 rounded-lg">
+                <div>
+                  <i class="fas fa-check-circle text-green-500"></i>
+                  <strong class="ml-2">Info4</strong>
+                  <div class="text-gray-500 text-sm">description</div>
+                </div>
+                <span class="text-gray-400 text-sm">2M</span>
+              </div>
             </div>
-            <div class="col-md-6">
-                <div class="section bg-white rounded shadow p-4">
-                    <h2 class="h4">Calendar</h2>
-                    <div class="calendar">
-                        <div class="p-3 text-white bg-primary rounded mb-3">February 2021</div>
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>Mo</th>
-                                    <th>Tu</th>
-                                    <th>We</th>
-                                    <th>Th</th>
-                                    <th>Fr</th>
-                                    <th>Sa</th>
-                                    <th>Su</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td>1</td>
-                                    <td>2</td>
-                                    <td>3</td>
-                                    <td>4</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td>7</td>
-                                    <td>8</td>
-                                    <td>9</td>
-                                    <td>10</td>
-                                    <td>11</td>
-                                    <td>12</td>
-                                </tr>
-                                <tr>
-                                    <td>13</td>
-                                    <td>14</td>
-                                    <td>15</td>
-                                    <td>16</td>
-                                    <td>17</td>
-                                    <td>18</td>
-                                    <td>19</td>
-                                </tr>
-                                <tr>
-                                    <td>20</td>
-                                    <td>21</td>
-                                    <td>22</td>
-                                    <td>23</td>
-                                    <td>24</td>
-                                    <td>25</td>
-                                    <td>26</td>
-                                </tr>
-                                <tr>
-                                    <td>27</td>
-                                    <td>28</td>
-                                    <td>29</td>
-                                    <td>30</td>
-                                    <td>31</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-        
-                            </tbody>
-                        </table>
-                        <div class="reminder-box">
-                            <h5>Lembretes</h5>
-                            <ul id="reminders" class="card shadow p-4">
-                                <strong>Pagamento do carro 100 euros</strong>
-                                <strong>Pagamento da casa 400 euros</strong>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+          </div>
+
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h2 class="text-lg font-semibold mb-4">Calendar</h2>
+            <div class="bg-blue-500 text-white p-3 rounded-md text-center mb-4">
+              February 2021
             </div>
+            <table class="w-full table-fixed border-collapse border border-gray-300">
+              <thead>
+                <tr class="bg-gray-200 text-gray-600">
+                  <th class="p-2 border border-gray-300">Mo</th>
+                  <th class="p-2 border border-gray-300">Tu</th>
+                  <th class="p-2 border border-gray-300">We</th>
+                  <th class="p-2 border border-gray-300">Th</th>
+                  <th class="p-2 border border-gray-300">Fr</th>
+                  <th class="p-2 border border-gray-300">Sa</th>
+                  <th class="p-2 border border-gray-300">Su</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-2 border border-gray-300"></td>
+                  <td class="p-2 border border-gray-300"></td>
+                  <td class="p-2 border border-gray-300">1</td>
+                  <td class="p-2 border border-gray-300">2</td>
+                  <td class="p-2 border border-gray-300">3</td>
+                  <td class="p-2 border border-gray-300">4</td>
+                  <td class="p-2 border border-gray-300">5</td>
+                </tr>
+                <tr>
+                  <td class="p-2 border border-gray-300">6</td>
+                  <td class="p-2 border border-gray-300">7</td>
+                  <td class="p-2 border border-gray-300">8</td>
+                  <td class="p-2 border border-gray-300">9</td>
+                  <td class="p-2 border border-gray-300">10</td>
+                  <td class="p-2 border border-gray-300">11</td>
+                  <td class="p-2 border border-gray-300">12</td>
+                </tr>
+                <tr>
+                  <td class="p-2 border border-gray-300">13</td>
+                  <td class="p-2 border border-gray-300">14</td>
+                  <td class="p-2 border border-gray-300">15</td>
+                  <td class="p-2 border border-gray-300">16</td>
+                  <td class="p-2 border border-gray-300">17</td>
+                  <td class="p-2 border border-gray-300">18</td>
+                  <td class="p-2 border border-gray-300">19</td>
+                </tr>
+                <tr>
+                  <td class="p-2 border border-gray-300">20</td>
+                  <td class="p-2 border border-gray-300">21</td>
+                  <td class="p-2 border border-gray-300">22</td>
+                  <td class="p-2 border border-gray-300">23</td>
+                  <td class="p-2 border border-gray-300">24</td>
+                  <td class="p-2 border border-gray-300">25</td>
+                  <td class="p-2 border border-gray-300">26</td>
+                </tr>
+                <tr>
+                  <td class="p-2 border border-gray-300">27</td>
+                  <td class="p-2 border border-gray-300">28</td>
+                  <td class="p-2 border border-gray-300"></td>
+                  <td class="p-2 border border-gray-300"></td>
+                  <td class="p-2 border border-gray-300"></td>
+                  <td class="p-2 border border-gray-300"></td>
+                  <td class="p-2 border border-gray-300"></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="mt-4">
+              <h3 class="text-md font-semibold">Reminders</h3>
+              <ul class="mt-2 space-y-2">
+                <li class="p-4 bg-gray-100 rounded-lg shadow">
+                  <strong>Pagamento do carro: 100 euros</strong>
+                </li>
+                <li class="p-4 bg-gray-100 rounded-lg shadow">
+                  <strong>Pagamento da casa: 400 euros</strong>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>

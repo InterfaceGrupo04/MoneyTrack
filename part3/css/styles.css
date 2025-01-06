@@ -11,7 +11,7 @@ body {
 }
 .header {
   background-color: purple;
-  background-image: linear-gradient(to right, #4a00e0,#8e2de8);
+  /*background-image: linear-gradient(to right, #4a00e0,#8e2de8);*/
   color: white;
   padding: 20px 20px;
   display: flex;
@@ -81,7 +81,7 @@ body {
 
 .btn-custom {
   background-color: purple;
-  background-image: linear-gradient(to right, #4a00e0,#8e2de8);
+  /*background-image: linear-gradient(to right, #4a00e0,#8e2de8);*/
   color: #fff;
   border: none;
   padding: 10px;

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Savings </title>
@@ -10,44 +10,74 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
 </head>
-  <body>
-    <div class="header bg-purple text-white p-3 d-flex justify-content-between align-items-center">
-      <div class="menu d-flex align-items-center">
-        <i class="fas fa-arrow-left"></i>
-        <a href="Menu.html" class="ms-2">Menu</a>
-        <a href="Budget.html" class="ms-3">Budget</a>
-        <a href="NovaCategoria.html" class="ms-3">New Categorie</a>
-      </div>
-      <div class="icons d-flex align-items-center">
-        <a href="Notification.html" class="fas fa-bell fa-2x ms-2"></a>
-        <a href="Profile.html" class="fas fa-user-friends fa-2x ms-3"></a>
-      </div>
+<body class="bg-gray-100 font-sans">
+  <header class="bg-purple-700 text-white p-3 flex justify-between items-center">
+    <nav class="flex items-center space-x-4">
+      <a href="Budget.html" class="fas fa-arrow-left"></a>
+      <a href="Menu.html" class="hover:text-gray-300">Menu</a>
+      <a href="Budget.html" class="hover:text-gray-300">Budget</a>
+      <a href="NovaCategoria.html" class="hover:text-gray-300">New Categorie</a>
+    </nav>
+    <div class="flex items-center space-x-4">
+      <a href="Notification.html" class="fas fa-bell text-2xl"></a>
+      <a href="Profile.html" class="fas fa-user-friends text-2xl"></a>
     </div>
-    <div class="container mt-4">
-      <div class="card shadow p-4">
-        <div class="d-flex align-items-center mb-4">
-          <i class=" fas fa-circle text-purple me-2"></i>
-          <h2 class="h5 mb-0">Add New Category</h2>
-      </div>
-        <form>
-          <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control name" placeholder="Enter name">
-          </div>
-          <div class="mb-3">
-              <label for="total" class="form-label">Date</label>
-              <input type="text" class="form-control name" placeholder="Enter date">
-          </div>
-          <div class="mb-3">
-              <label for="time" class="form-label">Limit Cost</label>
-              <input type="text" class="form-control name" placeholder="Enter limit cost ">
-          </div>
-          <div class="d-flex justify-content-between mt-4 buttons">
-            <a href="Budget.html" class="btn-custom">Save</a>
-            <a href="Budget.html" class="btn-custom">Cancel</a>
-          </div>
-        </form>
-      </div>
+  </header>
+
+  <main class="container mx-auto mt-6">
+    <div class="bg-white rounded shadow p-6">
+      <header class="flex items-center space-x-2 mb-4">
+        <i class="fas fa-circle text-purple-500"></i>
+        <h2 class="text-lg font-semibold text-gray-800">
+          Add New Category
+        </h2>
+      </header>
+
+      <form>
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-medium">Name</label>
+          <input
+            type="text"
+            id="name"
+            class="form-control w-full border border-gray-300 rounded p-2"
+            placeholder="Enter name"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="date" class="block text-gray-700 font-medium">Date</label>
+          <input
+            type="date"
+            id="date"
+            class="form-control w-full border border-gray-300 rounded p-2"
+          />
+        </div>
+        <div class="mb-4">
+          <label
+            for="limit-cost"
+            class="block text-gray-700 font-medium"
+            >Limit Cost</label
+          >
+          <input
+            type="number"
+            id="limit-cost"
+            class="form-control w-full border border-gray-300 rounded p-2"
+            placeholder="Enter limit cost"
+          />
+        </div>
+        <div class="flex justify-between mt-6">
+          <a
+            href="Budget.html"
+            class="bg-purple-600 text-white px-4 py-2 rounded shadow hover:bg-purple-700 transition"
+            >Save</a
+          >
+          <a
+            href="Budget.html"
+            class="bg-gray-500 text-white px-4 py-2 rounded shadow hover:bg-gray-600 transition"
+            >Cancel</a
+          >
+        </div>
+      </form>
     </div>
-  </body>
+  </main>
+</body>
 </html>

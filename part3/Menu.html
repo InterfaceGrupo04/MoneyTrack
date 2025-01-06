@@ -10,70 +10,80 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
-  <div class="header bg-purple text-white p-3 d-flex justify-content-between align-items-center">
-    <div class="menu d-flex align-items-center">
-      <span class="ms-2">Menu</span>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-purple-600 text-white p-4 flex justify-between items-center">
+    <div class="flex items-center space-x-2">
+      <span class="text-xl font-semibold">Menu</span>
     </div>
-    <div class="icons d-flex align-items-center">
-      <a href="Notification.html" class="fas fa-bell fa-2x ms-2"></a>
-      <a href="Profile.html" class="fas fa-user-friends fa-2x ms-3"></a>
+    <nav class="flex items-center gap-4">
+      <a href="Notification.html" class="fas fa-bell text-2xl hover:text-gray-300"></a>
+      <a href="Profile.html" class="fas fa-user-friends text-2xl hover:text-gray-300"></a>
+    </nav>
+  </header>
+
+  <section class="p-6 text-center">
+    <h1 class="text-4xl font-bold">Hi, João</h1>
+    <p class="text-lg mt-2">Today, 27 June 2023</p>
+  </section>
+
+  <section class="welcome-banner p-6 rounded-lg shadow-md mx-4 flex justify-between items-center" style="background: linear-gradient(135deg, #6f42c1,#007bff) ;">
+    <div class="text-white">
+      <h2 class="text-3xl font-bold">WELCOME TO MONEY TRACK</h2>
+      <p class="text-lg mt-2">Complete Control of Your Finances: Organize, Save, and Grow</p>
     </div>
-  </div>
+    <img
+      src="/part3/img/Menu.png"
+      alt="Person holding a trophy"
+      class="rounded-full shadow-md w-24 h-24"
+    />
+  </section>
 
-  <div class="greeting p-3">
-    <h1 class="display-2">Hi, João</h1>
-    <p class="fs-3">Today, 27 June 2023</p>
-  </div>
-
-  <div class="welcome-banner d-flex justify-content-between p-3 mb-4 bg-light rounded" style="background: linear-gradient(135deg, #6f42c1,#007bff) ;">
-    <div class="text">
-      <h2 style="color: white; font-size: 2.5rem;">WELCOME TO MONEY TRACK</h2>
-      <p style="color: white; font-size: 1.2rem;">Complete Control of Your Finances: Organize, Save, and Grow</p>
-    </div>
-    <img src="https://storage.googleapis.com/a1aa/image/Qo2U49C05r5CHxCIXlOvFVZwupCCSYSWVQ3EOlsdZTSYkHfJA.jpg" alt="Person holding a trophy" class="img-fluid rounded-circle" style="max-width: 150px;"/>
-  </div>
-
-
-  <div class="container">
-    <div class="row text-center">
-
-      <div class="col-sm-6 col-md-3 mb-4">
-        <div class="feature card">
-          <img src="https://storage.googleapis.com/a1aa/image/RAAj8SKdCSbCGJfJALhOabl83hG5e95z1bdJWUsBFe9fF5xPB.jpg" alt="Budget icon" class="card-img-top">
-          <div class="card-body">
-            <a href="Budget.html">Budget</a>
-          </div>
+  <section class="container mx-auto mt-8 px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="feature card bg-white rounded-lg shadow-md overflow-hidden text-center">
+        <img
+          src="/part3/img/budget.png"
+          alt="Budget icon"
+          class="w-full h-40 object-contain"
+        />
+        <div class="p-4">
+          <a href="Budget.html" class="text-lg font-semibold text-purple-600 hover:underline">Budget</a>
         </div>
       </div>
-    
-      <div class="col-sm-6 col-md-3 mb-4">
-        <div class="feature card">
-          <img src="https://storage.googleapis.com/a1aa/image/r9LZebaehCgMOUhe9Ib8b7iO9Oe2BksiIyzicDxkgf7SMyjfE.jpg" alt="Savings icon" class="card-img-top" height="100">
-          <div class="card-body">
-            <a href="Savings.html">Savings</a>
-          </div>
+
+      <div class="feature card bg-white rounded-lg shadow-md overflow-hidden text-center">
+        <img
+          src="/part3/img/Saving.png"
+          alt="Savings icon"
+          class="w-full h-40 object-contain"
+        />
+        <div class="p-4">
+          <a href="Savings.html" class="text-lg font-semibold text-purple-600 hover:underline">Savings</a>
         </div>
       </div>
-    
-      <div class="col-sm-6 col-md-3 mb-4">
-        <div class="feature card">
-          <img src="https://storage.googleapis.com/a1aa/image/uocBmdss5iKPDxOgCX9ATXLWMK0bMEfqLFLCXydP2VDyIPeTA.jpg" alt="Reminders icon" class="card-img-top" height="100">
-          <div class="card-body">
-            <a href="Reminders.html">Reminders</a>
-          </div>
+
+      <div class="feature card bg-white rounded-lg shadow-md overflow-hidden text-center">
+        <img
+          src="/part3/img/reminders.png"
+          alt="Reminders icon"
+          class="w-full h-40 object-contain"
+        />
+        <div class="p-4">
+          <a href="Reminders.html" class="text-lg font-semibold text-purple-600 hover:underline">Reminders</a>
         </div>
       </div>
-      
-      <div class="col-sm-6 col-md-3 mb-4">
-        <div class="feature card">
-          <img src="https://storage.googleapis.com/a1aa/image/UdNtaHTDlF7fJSitGcPfZ1ipYSndws06KJNTYzcvx0kmRe4nA.jpg" alt="Reports icon" class="card-img-top" height="100">
-          <div class="card-body">
-            <a href="Reports.html">Reports</a>
-          </div>
+
+      <div class="feature card bg-white rounded-lg shadow-md overflow-hidden text-center">
+        <img
+          src="/part3/img/reports.png"
+          alt="Reports icon"
+          class="w-full h-40 object-contain"
+        />
+        <div class="p-4">
+          <a href="Reports.html" class="text-lg font-semibold text-purple-600 hover:underline">Reports</a>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </body>
 </html>
