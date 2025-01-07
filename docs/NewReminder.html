@@ -14,9 +14,9 @@
   <header class="bg-purple-600 text-white py-4 px-6 flex justify-between items-center shadow-md">
     <nav class="flex items-center space-x-4">
       <a href="Reminders.html" class="fas fa-arrow-left text-xl"></a>
-      <a href="Menu.html" class="text-lg font-medium">Menu</a>
-      <a href="Reminders.html" class="text-lg font-medium">Reminders</a>
-      <a href="NewReminder.html" class="text-lg font-medium">New Reminder</a>
+      <a href="Menu.html" class="text-lg hover:underline">Menu</a>
+      <a href="Reminders.html" class="text-lg hover:underline">Reminders</a>
+      <a href="NewReminder.html" class="text-lg underline">New Reminder</a>
     </nav>
     <div class="flex items-center space-x-6">
       <a href="Notification.html" class="fas fa-bell text-2xl hover:text-gray-300"></a>
@@ -24,12 +24,13 @@
     </div>
   </header>
 
-  <main class="container mx-auto mt-6 p-6 bg-white shadow-lg rounded-lg">
-    <div class="flex items-center mb-6">
-      <i class="fas fa-circle text-purple-500 mr-3"></i>
-      <h1 class="text-2xl font-semibold text-gray-800">Add New Reminder</h1>
-    </div>
-
+  <div class="max-w-2xl mx-auto mt-8">
+    <div class="bg-white shadow-md rounded-lg p-6">
+      <div class="flex items-center mb-6">
+        <i class="fas fa-circle text-purple-600 mr-2"></i>
+        <h2 class="text-lg font-semibold">Add New Reminder</h2>
+      </div>
+    
     <form class="space-y-6">
       <div>
         <input 
@@ -94,18 +95,19 @@
       <div class="flex justify-between items-center">
         <a 
           href="Reminders.html" 
-          class="px-6 py-3 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700"
+          class="btn-custom hover:underline"
         >
           Save Reminder
         </a>
         <a 
           href="Notification.html" 
-          class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700"
+          class="btn-custom hover:underline"
         >
           Add to Calendar
         </a>
       </div>
     </form>
-  </main>
+    </div>
+  </div>
 </body>
 </html>
