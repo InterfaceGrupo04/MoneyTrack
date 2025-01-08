@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Savings </title>
+    <title>EditGoal</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -16,7 +16,7 @@
       <a href="Savings.html" class="fas fa-arrow-left"></a>
       <a href="Menu.html" class="text-lg hover:underline">Menu</a>
       <a href="Savings.html" class="text-lg hover:underline">Savings</a>
-      <a href="NewSavings.html" class="text-lg underline">New Goal</a>
+      <a href="EditGoal.html" class="text-lg underline">Travel</a>
     </div>
     <div class="flex items-center space-x-4">
       <a href="Notification.html" class="text-white text-2xl"><i class="fas fa-bell"></i></a>
@@ -26,18 +26,13 @@
 
   <div class="max-w-2xl mx-auto mt-8">
     <div class="bg-white shadow-md rounded-lg p-6">
-      <div class="flex items-center mb-6">
-        <i class="fas fa-circle text-purple-600 mr-2"></i>
-        <h2 class="text-lg font-semibold">Add New Goal</h2>
-      </div>
-
       <form class="space-y-4">
         <div>
           <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
           <input
             type="text"
             id="name"
-            placeholder="Enter name"
+            placeholder="Travel"
             class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-purple-500"
           />
         </div>
@@ -47,7 +42,7 @@
           <input
             type="text"
             id="total"
-            placeholder="Final goal amount"
+            placeholder="1200€"
             class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-purple-500"
           />
         </div>
@@ -57,7 +52,7 @@
           <input
             type="text"
             id="time"
-            placeholder="How long / / /"
+            placeholder="30/6/2025"
             class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-purple-500"
           />
         </div>
@@ -67,23 +62,17 @@
           <textarea
             id="description"
             rows="4"
-            placeholder="Add description"
+            placeholder="Summer trip to the Maldives"
             class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-purple-500"
           ></textarea>
         </div>
 
-        <div class="flex justify-between items-center mt-6">
+        <div class="flex justify-between mt-6">
           <a
             href="Savings.html"
             class="px-6 py-2 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700 transition"
           >
             Save goal
-          </a>
-          <a
-            href="Notification.html"
-            class="px-6 py-2 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700 transition"
-          >
-            Add to Calendar
           </a>
         </div>
       </form>
